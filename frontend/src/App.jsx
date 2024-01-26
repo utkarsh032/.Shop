@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import Header from './components/Header'
 
 function App() {
@@ -6,9 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      <div className=''>
+      <main className='py-6'>
 
-      </div>
+      </main>
+      <Footer />
     </>
   )
 }
