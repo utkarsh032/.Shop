@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 
 
 const Product = ({ product }) => {
   return (
     <div className="card w-96 glass mx-auto">
-      <a href={`/product/${product._id}`}>
-        <img src={product.image} alt={product.name} /></a>
+      <Link to={`/product/${product._id}`}>
+        <img src={product.image} alt={product.name} /></Link>
 
       <div className="card-body text-center">
         <h2 className="card-title card-actions justify-center">{product.name}</h2>

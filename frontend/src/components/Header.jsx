@@ -1,12 +1,13 @@
 import { IoMdCart } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <div>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost md:text-2xl text-xl ">.Shop</a>
+          <Link to='/' className="btn btn-ghost md:text-2xl text-xl ">.Shop</Link>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -21,7 +22,7 @@ const Header = () => {
                 <span className="font-bold text-lg">8 Items</span>
                 <span className="text-info">Subtotal: $</span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">View cart</button>
+                  <Link to='/cart' className="btn btn-primary btn-block">View cart</Link>
                 </div>
               </div>
             </div>
