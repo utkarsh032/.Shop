@@ -33,7 +33,6 @@ const Header = () => {
                 <FaRegUserCircle className="h-10 w-10" />
               </div>
             </div>
-
           </div>
         </div>
       </div>
