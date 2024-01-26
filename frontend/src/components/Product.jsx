@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Rating from "./Rating";
 
 
 const Product = ({ product }) => {
@@ -9,8 +10,10 @@ const Product = ({ product }) => {
 
       <div className="card-body text-center">
         <h2 className="card-title card-actions justify-center">{product.name}</h2>
-        <p className="card-actions sm:text-xl justify-end">$ {product.price}</p>
-
+        <div className=" flex ">
+          <Rating value={product.rating} text={`${product.numReviews} reviews`} />
+          <p className="sm:text-xl flex justify-end">$ {product.price}</p>
+        </div>
         <div className="card-actions justify-end">
           <button className="btn glass">Add To Cart</button>
         </div>
@@ -18,5 +21,6 @@ const Product = ({ product }) => {
     </div>
   );
 }
+
 
 export default Product;
