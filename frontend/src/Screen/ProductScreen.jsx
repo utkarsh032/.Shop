@@ -12,10 +12,11 @@ const ProductScreen = () => {
       <Link to='/' className="btn btn-active my-4">Back</Link>
       <div className="card glass lg:card-side bg-base-100 shadow-xl">
         <figure> <img className="" src={product.image} alt={product.name} /></figure>
-        <div className="card-body my-6 md:w-1/3">
+        <div className="card-body my-6 xl:w-1/3">
           <h2 className="card-title">{product.name}</h2>
           <Rating value={product.rating} text={`${product.numReviews} reviews`} />
           <span className="sm:text-xl">$ {product.price}</span>
+          <span> {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}</span>
           <span>{product.description}</span>
           <p>|| {product.category} || {product.brand}</p>
           <div className="card-actions justify-end">

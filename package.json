@@ -1,0 +1,15 @@
+{
+  "name": "proshop-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Utkarsh Raj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
